@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>	
+	<head>                               
+		<meta charset"utf-8" />                  
+		<title>GALAXIA ENANA DEL CAN MAYOR</title>
+			<title>GALAXIA DEL TRIÁNGULO (M33)</title>
+		<link rel="stylesheet" href="estilos3.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<h1>GALAXIA ENANA DEL CAN MAYOR</h1>
+		La Galaxia Enana del Can Mayor, conocida como Canis Major Dwarf Galaxy, es una de las galaxias enanas más cercanas a la Vía Láctea. Situada a aproximadamente 25,000 años luz de la Tierra, esta galaxia se encuentra en la constelación del Can Mayor, que es famosa por albergar la brillante estrella Sirio, la más luminosa en nuestro cielo nocturno.
+
+		<h2> ¿CUÁNDO SE DESCUBRIÓ?</h2>
+		Descubierta en 2003 gracias a datos del satélite de la misión de mapeo 2MASS, la Galaxia Enana del Can Mayor es una de las galaxias que forman parte del grupo local, que incluye a la Vía Láctea, la Galaxia de Andrómeda y varias otras galaxias más pequeñas. 
+		<p>Tiene un tamaño relativamente pequeño, con un diámetro de aproximadamente 7,000 años luz, y contiene una cantidad de estrellas significativamente menor que la Vía Láctea, estimándose que alberga alrededor de 1 a 2 millones de estrellas.</p>
+
+		<h2> CARACTERÍSTICAS</h2>
+		Una de las características más fascinantes de esta galaxia es su composición estelar. La mayoría de las estrellas en la Galaxia Enana del Can Mayor son antiguas y ricas en metales, lo que sugiere que se formó en una época en que el universo ya había tenido suficiente tiempo para crear elementos más pesados a partir de las generaciones anteriores de estrellas. Esto contrasta con otras galaxias enanas que son más jóvenes y tienen un contenido metálico más bajo.
+		<p> <img width ="400px"alt="GALAXIA DEL TRIÁNGULO VISIBILIDAD" src="imagen13.jpg" />
+
+		<p>La Galaxia Enana del Can Mayor también es notable por su interacción gravitacional con la Vía Láctea. Se cree que esta galaxia está siendo absorbida gradualmente por nuestra galaxia, un fenómeno conocido como canibalismo galáctico. Este proceso es común en el universo, donde las galaxias más grandes atraen y fusionan galaxias más pequeñas.</p>
+
+		<h2>MATERIA OSCURA</h2>
+		La Galaxia Enana del Can Mayor ha proporcionado a los astrónomos información valiosa sobre la materia oscura, que compone una gran parte de la masa del universo. Los estudios de la dinámica de sus estrellas sugieren la presencia de un halo de materia oscura que influye en su movimiento y distribución.
+
+		<p><hr>En resumen, la Galaxia Enana del Can Mayor no solo es una fascinante galaxia enana por su cercanía y composición, sino que también ofrece una ventana al entendimiento de las interacciones galácticas y la naturaleza de la materia oscura. Su estudio ayuda a los astrónomos a comprender mejor la historia y evolución de nuestro propio hogar en el cosmos.</hr></p>
+		<p><a href="EL UNIVERSO.html">Pincha aquí para volver a la página principal</a></p>
+
+	</body>
+</html>

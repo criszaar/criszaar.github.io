@@ -1,0 +1,69 @@
+p{
+	font-family: arial;
+	font-size: 12px;
+	text-align: justify;
+	text decoration: line-through;
+	line-height: 2;      
+	letter-spacing: 10px
+}
+
+h1{
+	font-family: Montserrat;
+	font-size: 78px;
+	font-weight: 900; 
+	text-align: center;
+	text decoration: under-line;
+	line-height: 4;
+	letter-spacing: 8px;
+	padding: 40gg0px 10px;
+	border:  67px solid #999;
+	border-radius: 15px;
+	margin: 20px;
+	background-color: #e797da;
+	
+}
+
+h2{
+	color: blue;
+	font-family: tahoma;
+	font-size: 18px;
+	font-weight: 100; 
+	font-style: italic;
+	text-align: right
+	text decoration: over-line;
+	line-height: 8;
+	letter-spacing: 4px
+}
+
+div{
+	box-sizing: 400px;
+	width: 100px;
+	height: 100px;
+	background: linear-gradient(#fd0, #fff);
+	border:  2px solid #999;
+	border-radius: 15px;
+	box-sizing: border-box;
+}
+
+li{
+	color: green;
+	font-family: Jacquarda Bastarda 9;
+	font-size: 16px;
+	font-weight: 200; 
+	font-style:
+	text-align: 
+	text decoration: over-line;
+	line-height: 1.15;
+	letter-spacing: 4px
+}
+a{
+	color:
+	font-family: Jacquarda Bastarda 9;
+	font-size: 16px;
+	font-weight: 200; 
+	font-style:
+	text-align: 
+	text decoration: non-under-line;
+	line-height: 1.15;
+	letter-spacing: 4px
+}

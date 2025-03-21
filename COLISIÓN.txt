@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>	
+	<head>                               
+		<meta charset"utf-8" />                  
+		<title>FUTURA COLISIÓN CON LA VÍA LÁCTEA </title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+	</head>
+	<div class="box box1"><body>
+		<h1>FUTURA COLISIÓN CON LA VÍA LÁCTEA</h1>
+		<p>Nuestra galaxia, la Vía Láctea, está destinada a colisionar con su vecina de mayor tamaño, un brillante conjunto de estrellas conocido como la galaxia de Andrómeda. Físicos de renombre han predicho este cataclismo y los astrónomos saben que, cuando se asiente el polvo espacial, ninguna galaxia será la misma: casi 1.000 millones de años después del primer contacto, ambas se unirán para formar una galaxia elíptica mucho más grande.</p>
+		<div class="box19 box"></div>
+		<p>Pero las nuevas mediciones de las estrellas de Andrómeda llevadas a cabo por el telescopio espacial Gaia de la Agencia Espacial Europea modifican las predicciones sobre el momento y la forma en que se producirá dicha colisión.</p>
+		
+		<p>Según informa un equipo de astrónomos en el Astrophysical Journal, la fecha original prevista, 3.900 millones de años, se ha pospuesto unos 600 millones de años. Y, en lugar de una colisión frontal, los astrónomos predicen una colisión inicial más «de refilón», como si chocáramos con el retrovisor de nuestro vecino.</p>
+
+		<p>«El panorama general no es muy diferente. Pero las trayectorias orbitales exactas son distintas», afirma Roeland van der Marel, autor del estudio, del Instituto de Ciencia del Telescopio Espacial.
+		
+		
+		<p><hr><a href="ANDRÓMEDA3.html">Pincha aquí para volver a la página anterior</a></p></hr>
+		<p<hr>a href="EL UNIVERSO.html">Pincha aquí para volver a la página principal</a></p></hr>
+
+		</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>	
+	<head>                               
+		<meta charset"utf-8" />                  
+		<title>FORMULARIO PARA PARTICIPAR EN LA WEB</title>
+		<link rel="stylesheet" href="estilos1.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+
+	</head>
+			<div class="box box1"><body>
+		<h1 class="quote2">FORMULARIO PARA PARTICIPAR EN LA WEB  </h1>
+		Introduzca sus datos y los archivos que quiera que aparezcan en la web.
+    <p><form>
+        <input type="text">
+    <p>Introduce tu color de usuario</p>
+        <input type="color">
+    <p>Introduce tu correo</p>
+        <input type="email" required name="useremail" placeholder="ejemplo@gmail.com">
+        <input type="password">
+        <input type="checkbox" required>
+        <input type="radio">
+        <input type="file">
+        <input type="date">
+        <input type="submit">
+    </form></p>
+
+		<p><hr><a href="EL UNIVERSO.html">Pincha aquí para volver a la página principal</a></p>
+
+	</body>
+</html>

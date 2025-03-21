@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>	
+	<head>                               
+		<meta charset"utf-8" />                  
+		<title>SUPERNOVAS LEJANAS</title>
+		<link rel="stylesheet" href="estilos3.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+	</head>
+	<body>
+		<h1>OBSERVACIÓN DE SUPERNOVAS LEJANAS</h1>
+		Observar una supernova lejana permite a los astrónomos retroceder en el tiempo, ofreciendo una visión de cómo era el universo hace miles de millones de años. Estas explosiones estelares son cruciales para comprender la evolución cósmica.
+		<div class="box2 box"></div>
+
+		<h2>1. DESCUBRIMIENTO SIFNIFICATIVO</h2>  
+		Recientemente, los astrónomos han identificado diez veces más supernovas lejanas de las que se conocían previamente. Esto incluye la supernova más antigua y lejana jamás observada, lo que marca un avance significativo en la astronomía.
+
+		<h2>2. DATOS DEL TELESCOPIO ESPACIAL JAMES WEBB</h2>  
+		Los descubrimientos provienen de las observaciones realizadas por el telescopio espacial James Webb de la NASA. En una reciente reunión de la Sociedad Astronómica Americana en Madison, se anunció que se habían encontrado alrededor de 80 supernovas en una pequeña porción del cielo analizada.
+
+		<h2>3. ÉPOCA DEL UNIVERSO</h2>  
+ 		Muchas de estas supernovas están situadas a distancias que representan una época en la que el universo tenía solo 2,000 millones de años. Esto permite a los científicos estudiar las condiciones del universo en su juventud.
+		<p> <img width "300px"alt="SUPERNOVAS" src="imagen14.jpg" />
+
+
+		<h2>4. OPINIONES DE EXPERTOS</h2>  
+		Justin Pierel, astrónomo del Space Telescope Science Institute, menciona que, aunque se sabía de la existencia de estas supernovas lejanas, la tecnología previa no permitía su detección. Edo Berger, astrónomo de Harvard, también destacó la importancia de recuperar estas supernovas en los datos de Webb.
+
+		<h2>5. REGISTRO DE SUPERNOVAS</h2>  
+		Este hallazgo contribuye a un creciente registro de estrellas que han explotado en diferentes momentos de la historia del universo. Aunque las 80 supernovas descubiertas son significativas, representan solo una pequeña fracción de las más de 10,000 supernovas que se descubren anualmente en encuestas menos profundas.
+
+		<p><hr>La relevancia de los descubrimientos de Webb radica en su capacidad para identificar supernovas más distantes. Estas supernovas ofrecen información crucial sobre una época temprana en la historia del universo, ayudando a los científicos a comprender mejor la formación y evolución de las galaxias.</hr>
+		<p><a href="EL UNIVERSO.html">Pincha aquí para volver a la página principal</a></p>
+
+	</body>
+</html>
