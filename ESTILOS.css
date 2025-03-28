@@ -109,7 +109,7 @@ body {
 
 
 .box1 {
-	display: table;
+	display: flex;
 	margin: 50px 40px;
 	padding: auto;
 	box-sizing: border-box;
