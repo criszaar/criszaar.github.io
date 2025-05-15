@@ -30,7 +30,7 @@
 		La Galaxia Enana del Can Mayor ha proporcionado a los astrónomos información valiosa sobre la materia oscura, que compone una gran parte de la masa del universo. Los estudios de la dinámica de sus estrellas sugieren la presencia de un halo de materia oscura que influye en su movimiento y distribución.
 
 		<p><hr>En resumen, la Galaxia Enana del Can Mayor no solo es una fascinante galaxia enana por su cercanía y composición, sino que también ofrece una ventana al entendimiento de las interacciones galácticas y la naturaleza de la materia oscura. Su estudio ayuda a los astrónomos a comprender mejor la historia y evolución de nuestro propio hogar en el cosmos.</hr></p>
-		<p><a href="EL UNIVERSO.html">Pincha aquí para volver a la página principal</a></p>
+		<p><a href="index.html">Pincha aquí para volver a la página principal</a></p>
 
 	</body>
 </html>
