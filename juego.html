@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🌌 Atrapa Planetas</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      overflow: hidden;
+      background: radial-gradient(circle at center, #000011, #000);
+      color: white;
+      cursor: none;
+    }
+
+    /* Pantalla de inicio */
+    #portada {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      z-index: 9999;
+      background: linear-gradient(to bottom, #000 60%, #111 100%);
+    }
+
+    #portada h1 {
+      font-size: 4em;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px #fff, 0 0 20px #0ff;
+    }
+
+    #portada button {
+      padding: 15px 40px;
+      font-size: 1.5em;
+      background-color: #e67e22;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    #portada button:hover {
+      background-color: #d35400;
+    }
+
+    /* Área del juego */
+    #game-area {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      display: none; /* Oculto hasta que se empiece */
+    }
+
+    .planeta {
+      position: absolute;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: bold;
+      user-select: none;
+      color: white;
+      text-shadow: 0 0 5px black;
+    }
+
+    #cesta {
+      position: absolute;
+      width: 100px;
+      height: 60px;
+      background: url(pngwing.com.png) no-repeat center;
+      background-size: contain;
+      pointer-events: none;
+      z-index: 1000;
+    }
+
+    #mensaje {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 24px;
+      padding: 10px 20px;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      z-index: 1000;
+    }
+
+    #scoreboard {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 18px;
+      z-index: 1000;
+    }
+
+    .agujero-negro {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      font-size: 40px;
+      line-height: 60px;
+      text-align: center;
+      color: #8e44ad;
+      font-weight: bold;
+      text-shadow: 0 0 10px #000, 0 0 20px #8e44ad;
+      z-index: 999;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Pantalla de inicio -->
+  <div id="portada">
+    <h1>🌌 Atrapa los Planetas</h1>
+    <button onclick="iniciarJuego()">Comenzar Juego</button>
+  </div>
+
+  <!-- Área del juego -->
+  <div id="game-area">
+    <div id="cesta"></div>
+    <div id="mensaje">¡Atrapa todos los planetas!</div>
+    <div id="scoreboard">Vidas: 3 | Planetas atrapados: 0 / 100</div>
+  </div>
+
+  <script>
+    const gameArea = document.getElementById("game-area");
+    const mensaje = document.getElementById("mensaje");
+    const scoreboard = document.getElementById("scoreboard");
+
+    const planetasData = [
+      { nombre: "Mercurio", radio: 20, color: "#bdc3c7" },
+      { nombre: "Venus", radio: 30, color: "#f1c40f" },
+      { nombre: "Tierra", radio: 32, color: "#2980b9" },
+      { nombre: "Marte", radio: 28, color: "#e67e22" },
+      { nombre: "Júpiter", radio: 50, color: "#f39c12" },
+      { nombre: "Saturno", radio: 45, color: "#d35400" },
+      { nombre: "Urano", radio: 40, color: "#2ecc71" },
+      { nombre: "Neptuno", radio: 40, color: "#3498db" },
+      { nombre: "Plutón", radio: 15, color: "#7f8c8d" }
+    ];
+
+    let planetas = [];
+    let agujerosNegros = [];
+
+    let vidas = 3;
+    let planetasAtrapados = 0;
+    const maxPlanetas = 100;
+
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
+
+    // Cesta
+    const cesta = document.getElementById("cesta");
+
+    // Seguir el mouse
+    document.addEventListener("mousemove", e => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      cesta.style.left = `${mouseX - 50}px`;
+      cesta.style.top = `${mouseY - 30}px`;
+    });
+
+    function crearPlanetas() {
+      if (planetas.length >= 7 || planetasAtrapados >= maxPlanetas) return;
+
+      const data = planetasData[Math.floor(Math.random() * planetasData.length)];
+      const div = document.createElement("div");
+      div.classList.add("planeta");
+      div.style.width = data.radio + "px";
+      div.style.height = data.radio + "px";
+      div.style.backgroundColor = data.color;
+      div.innerText = data.nombre;
+      div.dataset.nombre = data.nombre;
+
+      div.style.left = Math.random() * (window.innerWidth - data.radio) + "px";
+      div.style.top = "-60px";
+      div.speed = 2 + Math.random() * 3; // Planeta rápido
+
+      gameArea.appendChild(div);
+      planetas.push(div);
+    }
+
+    function crearAgujeroNegro() {
+      if (Math.random() < 0.42) { // Más frecuente
+        const agujero = document.createElement("div");
+        agujero.classList.add("agujero-negro");
+        agujero.innerHTML = "✦"; // Forma de asterisco o estrella
+        agujero.style.left = Math.random() * (window.innerWidth - 60) + "px";
+        agujero.style.top = "0px";
+
+        gameArea.appendChild(agujero);
+        agujerosNegros.push(agujero);
+
+        setTimeout(() => {
+          agujero.remove();
+          agujerosNegros = agujerosNegros.filter(a => a !== agujero);
+        }, 5000); // Dura 5 segundos
+      }
+    }
+
+    function actualizarMovimiento() {
+      if (vidas <= 0) return;
+
+      // Actualizar planetas
+      planetas.forEach(p => {
+        let top = parseFloat(p.style.top);
+        top += parseFloat(p.speed);
+        p.style.top = top + "px";
+
+        // Colisión con cesta
+        if (colisionaConCesta(p)) {
+          p.remove();
+          planetas = planetas.filter(pl => pl !== p);
+          planetasAtrapados++;
+          actualizarScore();
+          return;
+        }
+
+        // Llegó al fondo
+        if (top > window.innerHeight) {
+          p.remove();
+          planetas = planetas.filter(pl => pl !== p);
+          vidas--;
+          mensaje.textContent = "¡Perdiste una vida!";
+          setTimeout(() => mensaje.textContent = "", 1000);
+          actualizarScore();
+
+          if (vidas <= 0) {
+            mensaje.textContent = "💀 ¡Has perdido!";
+            detenerJuego();
+          }
+        }
+      });
+
+      // Actualizar agujeros
+      agujerosNegros.forEach(agujero => {
+        let ay = parseFloat(agujero.style.top);
+        ay += 2;
+        agujero.style.top = ay + "px";
+
+        if (ay > window.innerHeight) {
+          agujero.remove();
+          agujerosNegros = agujerosNegros.filter(a => a !== agujero);
+        }
+
+        // Colisión con cesta
+        if (colisionaConCesta(agujero)) {
+          mensaje.textContent = "💥 ¡El agujero te ha absorbido!";
+          vidas = 0;
+          detenerJuego();
+        }
+      });
+    }
+
+    function colisionaConCesta(obj) {
+      const rP = obj.getBoundingClientRect();
+      const rC = cesta.getBoundingClientRect();
+
+      return !(
+        rP.right < rC.left ||
+        rP.left > rC.right ||
+        rP.bottom < rC.top ||
+        rP.top > rC.bottom
+      );
+    }
+
+    function actualizarScore() {
+      scoreboard.textContent = `Vidas: ${vidas} | Planetas atrapados: ${planetasAtrapados} / ${maxPlanetas}`;
+      if (planetasAtrapados >= maxPlanetas) {
+        mensaje.textContent = "🎉 ¡Has ganado! 🌟";
+        detenerJuego();
+      }
+    }
+
+    function detenerJuego() {
+      clearInterval(planetaInterval);
+      clearInterval(movimientoInterval);
+      clearInterval(agujeroInterval);
+    }
+
+    let planetaInterval, movimientoInterval, agujeroInterval;
+
+    function iniciarJuego() {
+      // Ocultar portada y mostrar juego
+      document.getElementById("portada").style.display = "none";
+      gameArea.style.display = "block";
+
+      // Reiniciar variables
+      vidas = 3;
+      planetasAtrapados = 0;
+      planetas = [];
+      agujerosNegros = [];
+      actualizarScore();
+
+      // Iniciar intervalos
+      planetaInterval = setInterval(crearPlanetas, 800);
+      movimientoInterval = setInterval(actualizarMovimiento, 30);
+      agujeroInterval = setInterval(crearAgujeroNegro, 1000);
+    }
+  </script>
+</body>
+</html>

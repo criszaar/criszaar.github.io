@@ -1,0 +1,171 @@
+p{
+	font-family: arial;
+	font-size: 18px;
+	text-align: justify; 
+	line-height: 1.5;
+	padding: 5px 20px;
+
+}
+
+.quote{
+	font-family: arial;
+	font-size: 24px;
+	font-weight: 500;
+	text-align: justify;
+	
+}
+
+h1{
+	font-family: tahoma;
+	font-size: 98px;
+	font-weight: 900; 
+	text-align: center;
+	text-decoration: under-line;
+	line-height: 3;
+	letter-spacing: 8px;
+	padding: 40px 10px;
+	border:  6px solid black;
+	border-radius: 25px;
+	margin: 20px;
+	background: linear-gradient(#ae5ba9,#bc9eff);
+		
+	
+}
+
+
+
+br {
+	font-family: arial;
+	font-size: 18px;
+	text-align: justify; 
+	line-height: 1.5;
+}
+	
+h2{
+	
+	color: #25003D;
+	font-family: tahoma;
+	font-size: 45px;
+	font-weight: 900; 
+	text-align: center;
+	text decoration: over-line;
+	line-height: 1;
+	letter-spacing: 4px;
+	padding: 40px;
+	border:  6px solid black;
+	border-radius: 25px;
+	margin: 40px;
+	background: radial-gradient(#efdbf78f,#8a45f5a6);
+}
+
+.side1 {
+	position: fixed;
+	left: 10px;
+	top:10px;
+}
+
+
+
+
+
+h3{
+	color: #25003D;
+	font-family: tahoma;
+	font-size: 25px;
+	font-weight: 900; 
+	text-align: left;
+	text decoration: over-line;
+	line-height: 1;
+	letter-spacing: 4px;
+	padding: 20px;
+}
+
+div{
+	box-sizing: 400px;
+	border:  2px solid #999;
+	border-radius: 15px;
+	box-sizing: border-box;
+}
+
+.box{
+	width: 150vh;
+	height: 50vh;
+	margin-left:30px;
+	margin-right:30px;
+	box-sizing: border-box;
+	margin-top: 30px;
+	border-radius: 5%;
+	display: inline-block;
+}
+
+.box1{
+	display: table;
+	margin: 50px 40px;
+	padding: auto;
+	box-sizing: border-box;
+	margin: auto;
+	border-radius: 20px;
+	background:#d5d0d582;
+
+}
+img{
+	position: center;   
+
+}
+.box2{
+	width: 80vh;
+	height: 40vh;
+	background-position: center;   
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-shadow: 0px 0px 30px 10px #4d2d52;
+	background-image: url("https://www.ngenespanol.com/wp-content/uploads/2024/01/asi-es-el-corazon-de-la-via-lactea-nuestra-galaxia.jpg");
+}
+
+.box4{
+	width: 80vh;
+	height: 40vh;
+	background-position: center;   
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-shadow: 0px 0px 30px 10px #4d2d52;
+	background-image: url("https://apod.nasa.gov/apod/image/2303/M31_Alharbi_4822.jpg");
+}
+
+
+
+.box3{
+	background-size: cover;
+	background-position: center;        /*el right tmb puede ser center*/
+	background-image: url("https://th.bing.com/th/id/R.453690800d01fff0d49c122876ca9ceb?rik=EMaN1gj9tNzDjQ&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fSyZvH2Z.jpg&ehk=2RUCTTCPriHc%2brZfD1yF0Ud9%2ffV2uRvgEJFpIHX08Mk%3d&risl=&pid=ImgRaw&r=0");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	
+}
+
+li{
+	color: green;
+	font-family: Jacquarda Bastarda 9;
+	font-size: 16px;
+	font-weight: 200; 
+	text decoration: over-line;
+	line-height: 1.15;
+	letter-spacing: 2px;
+}
+a{
+	font-family: oswald;
+	color: #4d2d52;
+	font-size: 22px;
+	font-weight: 400; 
+	text-decoration: none;
+	line-height: 1.15;
+	letter-spacing: 1.15px;
+}
+
+
+body{
+	background: #0006;
+	background-size: cover;
+	background-image: url("https://s1.1zoom.me/big3/876/373381-sepik.jpg");
+	background-attachment: fixed;
+}
