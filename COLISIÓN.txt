@@ -23,7 +23,7 @@
 		
 		
 		<p><hr><a href="ANDRÓMEDA3.html">Pincha aquí para volver a la página anterior</a></p></hr>
-		<p<hr>a href="EL UNIVERSO.html">Pincha aquí para volver a la página principal</a></p></hr>
+		<p<hr>a href="index.html">Pincha aquí para volver a la página principal</a></p></hr>
 
 		</body>
 </html>
