@@ -32,7 +32,7 @@
 		<p> <img width ="400px"alt="GALAXIA DEL TRIÁNGULO VISIBILIDAD" src="imagen12.jpeg" />
 
 		<p><hr>En términos científicos, M33 es un objeto clave para estudiar la evolución de galaxias espirales y los procesos de formación estelar. Su estructura y actividad estelar, junto con su interacción con otras galaxias del Grupo Local, ofrecen una valiosa ventana para entender cómo se forman, crecen y evolucionan las galaxias.</hr></p>
-		<p><a href="EL UNIVERSO.html">Pincha aquí para volver a la página principal</a></p>
+		<p><a href="index.html">Pincha aquí para volver a la página principal</a></p>
 
 	</body>
 </html>
