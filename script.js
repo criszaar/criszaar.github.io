@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         box1.style.backgroundColor = color;
     }
 
-    gris.addEventListener("click", () => cambiarColorFondo("#d5d0d582");
+    gris.addEventListener("click", () => cambiarColorFondo("#d5d0d582"));
     morado.addEventListener("click", () => cambiarColorFondo( "rgba(225, 57, 217, 0.885)"));
     rosado.addEventListener("click", () => cambiarColorFondo("pink"));
     negro.addEventListener("click", () => cambiarColorFondo("rgba(40, 132, 213, 0.744)"));
